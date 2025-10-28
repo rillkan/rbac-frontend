@@ -8,6 +8,10 @@ export default function ArticleForm({ onArticleCreated }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!title.trim() || !body.trim()) {
+    alert("⚠️ Please enter both a title and content before submitting!");
+    return;
+  }
     try {
       await createArticle({ title, body });
       setTitle("");

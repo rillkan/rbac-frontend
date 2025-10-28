@@ -5,8 +5,8 @@ const LoginForm = ({ onLogin }) => {
     let token = "";
 
     if (role === "admin") token = "User admin";
-    else if (role === "viewer") token = "User vi";
-    else if (role === "editor") token = "User ed";
+    else if (role === "viewer") token = "User viewer";
+    else if (role === "editor") token = "User editor";
 
     localStorage.setItem("token", token);
     onLogin(role);

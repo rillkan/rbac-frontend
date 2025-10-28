@@ -11,10 +11,10 @@ It is built using **React**, **Vite**, and **TailwindCSS**, and interacts with t
 # Install dependencies
 npm install
 
-# Development mode
-npm run dev
+# Start development server
+npm start
 
-# Open production build
+# Build for production
 npm run build
-npm run preview
+
 ```
